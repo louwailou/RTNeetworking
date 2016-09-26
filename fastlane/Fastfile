@@ -17,7 +17,7 @@ default_platform :ios
 
 platform :ios do
 # 设置match git url 管理证书
-  ENV['MATCH_GIT_URL'] = ' https://github.com/louwailou/cert.git'
+  
   ENV['MATCH_GIT_BRANCH'] = 'master'
   ENV['MATCH_TYPE'] = 'development'
   before_all do
