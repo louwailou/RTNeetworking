@@ -17,7 +17,7 @@ default_platform :ios
 
 platform :ios do
 # 设置match git url 管理证书
-  
+  ENV['MATCH_GIT_URL'] = ' https://github.com/louwailou/cert.git'
   ENV['MATCH_GIT_BRANCH'] = 'master'
   ENV['MATCH_TYPE'] = 'development'
   before_all do
@@ -28,9 +28,10 @@ platform :ios do
 
   desc "ipa developement"
   lane :developement do
-    gym(scheme:"CTNetworking",clean:true,use_legacy_build_api:true,
-    output_directory: "./build/",configuration:"Debug")
     match(type:'development')
+    gym(scheme:"CTNetworking",clean:true,use_legacy_build_api:true,
+    output_directory: "./build/",configuration:"Debug",export_method: "development")
+
   end
 
 

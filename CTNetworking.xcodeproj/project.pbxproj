@@ -716,8 +716,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sun.fastlane;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "37a784c1-f649-41dd-a5b2-ece4b11b8e8b";
-				PROVISIONING_PROFILE_SPECIFIER = wildcardDevelopmentProfile;
+				PROVISIONING_PROFILE = "71e0590c-6b27-49b0-b013-96c834465bb9";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.sun.fastlane";
 			};
 			name = Debug;
 		};
